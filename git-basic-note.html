@@ -12,7 +12,7 @@ file path>git push origin main
 file path>git fetch origin
 file path>git reset --hard origin/main
 ----------------------------------------------------------------------
-//create a new repository on the command line
+//create a new repository on the command line---it will create github url---
 
 file path>echo "# test" >> README.md
 file path>git init
@@ -32,9 +32,29 @@ file path>git add .
 file path>git commit -m "Initial commit"
 git commit -m "Initial commit"
 git branch -M main
-git remote add origin https://github.com/USERNAME/REPO_NAME.git
+git remote add origin https://github.com/theshahalamcse/mastering-html-css.git
 git push -u origin main
 
 ----------------------------------------
 update link of GitHub
 git remote set-url origin git@github.com:username/REPO_NAME.git
+
+
+
+
+
+----------------------------------------------
+1. Create repo on GitHub
+
+Add README (optional but fine)
+Add MIT license (good practice)
+
+2. Connect local project
+git init
+git remote add origin <repo-url>
+git pull origin main --rebase
+
+3. Push local code
+git add .
+git commit -m "initial commit"
+git push -u origin main
